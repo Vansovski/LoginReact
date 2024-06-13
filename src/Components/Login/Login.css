@@ -99,3 +99,7 @@
     margin: 20px 0 10px;
     text-shadow: none;
 }
+.container .signup-link p{
+    text-shadow: none;
+    font-size: 14px;
+}
