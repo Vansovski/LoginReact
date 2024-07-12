@@ -21,7 +21,7 @@ const Login = () => {
             <h1>Acesse o sistema</h1>
             <div className="input-field">
                 <input 
-                type="email" 
+                type="e-mail" 
                 placeholder='E-mail'
                 onChange={(e) => setUsername(e.target.value)} />
                 <FaUser className="icon"/>
