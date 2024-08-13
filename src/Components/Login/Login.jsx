@@ -17,14 +17,23 @@ const Login = () => {
 
   return (
     <div className="container">
-        <form onSubmit={handleSubmit}>
-            <h1>Acesse o sistema</h1>
+        <div>
+            <h1>Inicie com
+                <br/>Free Trial
+            </h1>
+            <div className="text-free-trial">
+                Teste todos os recursos sem cartão de crédito!
+            </div>
+           
+        </div>
+
+        <div>
+         <form onSubmit={handleSubmit}>
             <div className="input-field">
                 <input 
                 type="e-mail" 
                 placeholder='E-mail'
                 onChange={(e) => setUsername(e.target.value)} />
-                <FaUser className="icon"/>
             </div>
             <div className="input-field">
                 <input 
@@ -32,21 +41,23 @@ const Login = () => {
                 name="password" 
                 placeholder='Senha'
                 onChange={(e) => setPassword(e.target.value)}/>
-                <FaLock className="icon"/>
             </div>
             <div className="recall-forget">
                 <label>
                     <input type="checkbox"/>
-                    Lembre de mim
+                    Concordo com os <a href="#">Termos</a> de uso e <a href="#">Privacidade</a>
                 </label>
-                <a href="#">Esqueceu a senha?</a>
+                
             </div>
-            <button>Entrar</button>
+            <div className="form-button">
+                <button>Entrar</button>
+            </div>
         
         <div className="signup-link">
-            <p>Não tem conta? <a href="#">Registrar</a></p>
+            <p>Já tem uma conta? <a href="#">Login</a></p>
         </div>
-        </form>
+         </form>
+        </div>
     </div>
   )
 }
